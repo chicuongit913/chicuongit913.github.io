@@ -1,8 +1,8 @@
 body, html {
+	margin: 0;
 	height: 100%;
 	background-color: #f1f1f1;
-	margin: 20px;
-	color: #333;
+	font-size: 100%;
 }
 
 h1, h2 {
@@ -11,17 +11,34 @@ h1, h2 {
 	font-weight: 400;
 }
 
+main {
+	width: 80vw;
+	margin: 0 auto 120px;
+}
+
 div.container {
-	margin-bottom: 150px;
+	height: 100%;
+	color: #333;
+	font-family: 'Baloo Bhaina 2', cursive;
 }
 
 #desc-me strong{
 	color: #467b48;
 }
 
+li a {
+	text-decoration: none;
+	color: #467b48;
+}
+
+li a:hover {
+	text-decoration: underline;
+	color: #4CAF50;
+}
+
 #my-mood-block {
 	width: 100%;
-
+	color: #4CAF50;
 }
 
 #my-mood-block .my-mood-item {
@@ -47,6 +64,14 @@ div.container {
 	margin-right: 0;
 }
 
+p:first-letter {
+	color: #4CAF50;
+	float: left;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	padding-right: 5px;
+}
+
 footer {
 	height: 100px;	
 	position: fixed;
@@ -58,19 +83,15 @@ footer {
 	text-align: center;
 }
 
-footer #coppy-right {
-	padding: 10px;
-	float: left;
-	color: #333;
-}
-footer #coppy-right p {
-	margin: 8px 0;
+ol {
+	display: flex;
+	flex-direction: column-reverse;
 }
 
-footer #validator {
-	float: right;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
+ol li {
+	flex: 0 0 auto;
+}
+
+ol#favorite-movie > li > dl > dt {
+	font-weight: 500;
 }
