@@ -29,6 +29,10 @@ main div#block-main-heading {
     justify-content: center;
 }
 
+label.strike {
+    text-decoration: line-through;
+}
+
 main a {
     color: #A4A400;
 }
