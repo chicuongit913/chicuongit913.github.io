@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    background-image: url("../images/lab3/background.png");
+    font-size: 8pt;
+    font-family:  "Verdana", "Tahoma", sans-serif;
+}
+
+body header .banner {
+    background-image: url("../images/lab3/bannerbg.png");
+    display: flex;
+    justify-content: center;
+}
+
+body header h1 {
+    text-align: center;
+    font-family: "Tahoma", "Verdana", sans-serif;
+    text-shadow: 3px 3px #999999;
+    font-size: 24pt;
+}
+
+body main .container{
+    width: 800px;
+    margin: 0 auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+body .container .right-container {
+    float: right;
+    width: 250px;
+    height: auto;
+    background-color: #A2B964;
+    border-top-right-radius: 18px;
+    font-size: 8pt;
+    font-family: Arial, sans-serif;
+}
+
+body .container .right-container dl dt {
+    padding: 10pt;
+    font-weight: bold;
+}
+
+body .container .right-container dl dd {
+    display: block;
+    margin-inline-start: 40px;
+}
+
+body .container .left-container {
+    width: 550px;
+    column-count: 2;
+    margin-right: 31%;
+}
+
+body .container .left-container p.review-comment {
+    border: 2px solid gray;
+    font-size: 8pt;
+    font-weight: bold;
+    background-color: #E8DC9B;
+    border-radius: 10px;
+    padding: 5px;
+    overflow: auto;
+    font-family: none;
+}
+
+
+body .container .left-container p.review-comment:first-child {
+    margin-top: 0;
+}
+
+/*body .container .left-container p.review-comment:first-child {*/
+/*    margin-top: 0;*/
+/*}*/
+
+body .container .left-container > div {
+    padding: 0 5px;
+}
+body .container .left-container > div > p > img{
+    margin-right: 5px;
+    float: left;
+    overflow: auto;
+}
+
+
+body .container .left-container p.review-user {
+    font-style: italic;
+    overflow: auto;
+    margin-bottom: 20pt;
+    font-size: 8pt;
+}
+
+body .container .left-container .rotten {
+    background-image: url("../images/lab3/rbg.png");
+    font-size: 48pt;
+    font-weight: bold;
+    color: red;
+    column-span: all;
+    height: 83px;
+    margin-bottom: 10px;
+}
+
+body .container .left-container .rotten span {
+    vertical-align: top;
+}
+
+body .container .container-bottom {
+    background-color: #A2B964;
+    text-align: center;
+    float: right;
+    width: 100%;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+body footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+@media screen and (min-width:576px){
+
+}
+@media screen and (min-width:768px){
+
+}
+@media screen and (min-width:992px){
+
+}
+@media screen and (min-width:1200px){
+
+}
