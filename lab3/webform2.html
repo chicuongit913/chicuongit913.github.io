@@ -48,21 +48,21 @@
                             <div class="col-md-5 offset-1 col-sm-11">
                                 <div class="form-group">
                                     <label>Product Number</label>
-                                    <input required  type="number" name="product-number" class="form-control form-control-lg validate">
+                                    <input id="product-number" required  type="number" name="product-number" class="form-control form-control-lg validate">
                                     <div class="invalid-feedback">
                                         Product Number must be number!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Name</label>
-                                    <input type="text" name="name" required class="form-control form-control-lg validate">
+                                    <input type="text" id="name" name="name" required class="form-control form-control-lg validate">
                                     <div class="invalid-feedback">
                                         Please provide product name!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Unit Price</label>
-                                    <input type="number" step="0.01" required name="unit-price" class="form-control form-control-lg validate">
+                                    <input type="number" id="unit-price" step="0.01" required name="unit-price" class="form-control form-control-lg validate">
                                     <div class="invalid-feedback">
                                         Unit Price must be number!
                                     </div>
@@ -71,14 +71,14 @@
                             <div class="col-md-5 offset-1 col-sm-11">
                                 <div class="form-group">
                                     <label>Quantity in stock</label>
-                                    <input type="number" name="quantity-stock" required  class="form-control form-control-lg validate">
+                                    <input type="number" id="quantity-stock" name="quantity-stock" required  class="form-control form-control-lg validate">
                                     <div class="invalid-feedback">
                                         Quantity in stock must be number!
                                     </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Supplier</label>
-                                    <select required id="inputState" class="form-control form-control-lg validate">
+                                    <select required id="supplier" name="supplier" class="form-control form-control-lg validate">
                                         <option value="" selected>Select a supplier</option>
                                         <option value="1">supplier 1</option>
                                         <option value="2">supplier 2</option>
@@ -98,7 +98,7 @@
                         <div class="form-row float-right mt-5">
                             <input class="btn btn-outline-dark btn-lg" name="reset" value="Reset" type="reset"/>
                             <input class="btn btn-outline-danger btn-lg ml-2" name="cancel" value="Cancel" type="reset"/>
-                            <input class="btn btn-outline-primary btn-lg ml-2" name="add" value="Add Product" type="submit"/>
+                            <input class="btn btn-outline-primary btn-lg ml-2" name="add" id="add-product-button" value="Add Product" type="submit"/>
                         </div>
                     </form>
                 </section>

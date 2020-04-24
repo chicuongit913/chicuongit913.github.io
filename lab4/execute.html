@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+    <link rel="icon" href="../assets/images/favicon-cc.png" type="image/x-icon" />
+
+    <link href="../assets/libs/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="../assets/css/until.css" type="text/css" rel="stylesheet" />
+
+    <script src="../assets/libs/jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="../assets/libs/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="../assets/js/until.js" type="text/javascript"></script>
+    <script src="../assets/js/lab4.2.js" type="text/javascript"></script>
+</head>
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="align-content-center mt-5 mb-5">
+                    Execute problems
+                </h1>
+                <form  class="col-lg-8 offset-lg-2 col-sm-12 offset-sm-0">
+                    <div class="form-group">
+                        <label>Command</label>
+                        <select required id="command" name="command" class="form-control form-control-lg validate">
+                            <option value="" selected>Select a command</option>
+                            <option data-args="number 1,number 2 ( eg. 5,7 )" value="max">max</option>
+                            <option data-args="number 1,number 2, number 3 ( eg. 5,7,9 )" value="maxOfThree">max Of Three</option>
+
+                            <option data-args="string ( eg. 'h' )" value="isVowel">is Vowel</option>
+                            <option data-args="array number ( eg. [1, 2, 3, 4])" value="sum">sum</option>
+                            <option data-args="array number ( eg. [1, 2, 3, 4])" value="multiply">multiply</option>
+                            <option data-args="string ( eg. 'hello words')" value="reverse">reverse</option>
+                            <option data-args=" array string ( eg. ['a','aa'])" value="findLongestWord">findLongestWord</option>
+                            <option data-args="array string, number ( eg. ['a','aa','aaa'],2)" value="filterLongWords">filterLongWords</option>
+                            <option data-args="array number ( eg. [1,2,3])" value="computeSumOfSquares">computeSumOfSquares</option>
+                            <option data-args="array number ( eg. [1,2,3,4,5,6])" value="printOddNumbersOnly">printOddNumbersOnly</option>
+                            <option data-args="array number ( eg. [1,2,3,4,5])" value="computeSumOfSquaresOfEvensOnly">computeSumOfSquaresOfEvensOnly</option>
+                            <option data-args="array number ( eg. [1,2,3,4,5] )" value="findSecondBiggest">findSecondBiggest</option>
+                            <option data-args="number ,start 1, start 2 ( eg. 5,0,1 )" value="printFibo">print Fibo</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select supplier!
+                        </div>
+                    </div>
+                    <div id="block-args" class="form-group">
+                        <label>Command arguments</label>
+                        <input id="command-args" placeholder="" required  type="text" name="command-args" class="form-control form-control-lg validate">
+                        <div class="invalid-feedback">
+                            Please provide command arguments follow by place holder!
+                        </div>
+                    </div>
+
+                    <input type="submit" id="submit-button" class="btn btn-primary" value="Execute"/>
+                    <div class="form-group mt-5">
+                        <label>Command results</label>
+                        <input id="command-results" placeholder=""  type="text" name="command-results" class="form-control form-control-lg validate">
+
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
