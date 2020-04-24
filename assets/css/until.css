@@ -15,7 +15,7 @@ footer #copy-right {
     color: #333;
 }
 
-footer #copy-right label {
+footer #copy-right p {
     display: block;
     margin-bottom: 10px;
     text-align: left;
@@ -30,6 +30,12 @@ footer #validator {
     display: flex;
     align-items: center;
     margin-right: 50px;
+}
+
+footer.use-bootstrap #copy-right p {
+    display: block;
+    margin: 5px 0;
+    text-align: left;
 }
 
 #top-image {

@@ -3,13 +3,13 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: #fff;
-    background-image: url("../images/lab3/background.png");
+    background-image: url("../images/lab2/background.png");
     font-size: 8pt;
     font-family:  "Verdana", "Tahoma", sans-serif;
 }
 
 body header .banner {
-    background-image: url("../images/lab3/bannerbg.png");
+    background-image: url("../images/lab2/bannerbg.png");
     display: flex;
     justify-content: center;
 }
@@ -93,7 +93,7 @@ body .container .left-container p.review-user {
 }
 
 body .container .left-container .rotten {
-    background-image: url("../images/lab3/rbg.png");
+    background-image: url("../images/lab2/rbg.png");
     font-size: 48pt;
     font-weight: bold;
     color: red;
