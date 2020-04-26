@@ -1,0 +1,52 @@
+#header {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: normal;
+    font-style: italic;
+    font-family: "Impact", fantasy;
+}
+
+legend {
+    font-family: "Impact", fantasy;
+    font-size: 120%;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+fieldset {
+    background: #fff;
+}
+
+main div.container {
+    margin-bottom: 150px;
+}
+
+textarea#desc-decoration {
+    font-family: monospace;
+    font-size: 12pt;
+    text-align: right;
+}
+
+textarea#desc-decoration.bigger-font {
+    font-size: 24pt;
+}
+
+textarea#desc-decoration.nice-text {
+    text-decoration: underline;
+    color: green;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 2px solid #cccccc;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+legend {
+
+}
