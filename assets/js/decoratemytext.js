@@ -37,6 +37,8 @@ function biggerFontDescDecoration() {
 
     let fontSize = parseInt(currentFontSize) + 2;
     descDecoration.style.fontSize = fontSize + currentUnit;
+
+
 }
 
 function blingChange() {
@@ -54,8 +56,19 @@ function blingChange() {
 window.onload = function () {
     "use strict";
     let btnBiggerDecoration = document.getElementById("btn-bigger");
+    var stopBigger;
+    var btnStopBigger = document.getElementById("btn-stop-bigger");
+
     btnBiggerDecoration.onclick = function () {
-        setInterval(biggerFontDescDecoration, 500);
+        btnStopBigger.classList.remove("d-none");
+        btnBiggerDecoration.classList.add("d-none");
+        stopBigger = setInterval(biggerFontDescDecoration, 500);
+    };
+
+    btnStopBigger.onclick = function () {
+        clearInterval(stopBigger);
+        btnStopBigger.classList.add("d-none");
+        btnBiggerDecoration.classList.remove("d-none");
     };
 
     let blingCheck = document.getElementById("bling-check");
