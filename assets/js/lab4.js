@@ -16,36 +16,49 @@ console.log(maxOfThree(12, 20, 19));
 
 //prob3
 const isVowel = function (s) {
-    return s.length === 1;
+    if(s === "a" ||
+        s === "A" ||
+        s === "e" ||
+        s === "E" ||
+        s === "i" ||
+        s === "I" ||
+        s === "o" ||
+        s === "O" ||
+        s === "u" ||
+        s === "U")
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 };
 
 console.log(isVowel("d"));
 
 //prob 4
 const sum = function (arr) {
-    return arr.reduce((accumulator, element) => accumulator + element, 0);
+    return arr.reduce((accumulator, element) => accumulator + element);
 };
 
 const multiply = function (arr) {
     if(arr.length === 0)
         return 0;
 
-    return arr.reduce((accumulator, element) => accumulator * element, 1);
+    return arr.reduce((accumulator, element) => accumulator * element);
 };
 
-console.log("SUM 1,2,3,4 : " + sum([1, 2, 3, 4]));
+console.log("SUM 1,2,3,4 : 1 " + sum([1, 2, 3, 4, 5, 6]));
 console.log("Multiply 1,2,3,4 : " + multiply([1, 2, 3, 4]));
 
 //prob5
-const reverse = function (s) {
-    let s1 = "";
-
-    for( let i = s.length-1 ; i >= 0; i--) {
-        s1 +=s[i];
-    }
-    return s1;
+const reverse = function (str) {
+    return (str === "") ? "" : reverse(str.substr(1)) + str.charAt(0);
 };
-console.log(reverse("jag testar"));
+
+console.log(reverse("hello word"));
+
 
 //prob6
 const findLongestWord = function (arrString) {
