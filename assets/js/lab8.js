@@ -57,7 +57,6 @@ count.makeAdder1 = function(step) {
             i++;
         }
     };
-
 };
 
 count.reset()

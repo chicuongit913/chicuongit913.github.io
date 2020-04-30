@@ -20,3 +20,7 @@
     font-size: 16pt;
     font-weight: 300;
 }
+
+.clearfix{
+    clear: both;
+}
