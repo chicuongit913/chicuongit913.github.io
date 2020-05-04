@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm practice - Cuong Nguyen - 611111</title>
+
+    <link rel="icon" href="/assets/images/favicon-cc.png" type="image/x-icon" />
+
+    <link href="assets/libs/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="assets/css/midterm.css" type="text/css" rel="stylesheet" />
+
+    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/midterm.js"></script>
+    <script src="assets/libs/notify/notify.min.js"></script>
+</head>
+<body class="pb-5">
+<header>
+    <nav id="nav-menu" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">The South West-Regional Census</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="census.html">Census Form</a>
+                </li>
+            </ul>
+            <span id="navbar-date-time" class="mr-3"></span>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <section>
+            <h2 class="mt-5 mb-5 font-weight-light border-bottom pb-3">Census Form</h2>
+            <form method="get" id="add-person-form" action="census.html">
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>*Full Name:</label>
+                            <input id="full_name" required name="full_name" class="form-control form-control-lg validate">
+                            <small class="text-muted">Enter your Full Name as printed on your Government-issued ID</small>
+                            <div class="invalid-feedback">
+                                Please provide the full name!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label>*Citizen ID:</label>
+                            <input id="citizen_id" required pattern="(?=.*\d).{10}" name="citizen_id" placeholder="XXXXXXXXXX" class="form-control form-control-lg validate">
+                            <small class="text-muted">Enter your 10-Digit Citizen ID</small>
+                            <div class="invalid-feedback">
+                                Please provide citizen ID!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="state">*State</label>
+                            <select required id="state" name="state" class="form-control validate">
+                                <option value="" selected>Select ...</option>
+                                <option value="1">South West region</option>
+                                <option value="2">Arizona</option>
+                                <option value="3">New Mexico and Texas</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select supplier!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="form-group">
+                            <label>*Social security Number:</label>
+                            <input id="social_security_number" required pattern="(\d)(\d)(\d)-(\d)(\d)-(\d)(\d)(\d)(\d)" name="social_security_number" placeholder="XXX-XX-XXXX" class="form-control form-control-lg validate">
+                            <small class="text-muted">Enter your social security number(in the format show)</small>
+                            <div class="invalid-feedback">
+                                Please provide social security number!
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>*Senior citizen</label>
+                            <div class="d-block">
+                                <div class="form-check form-check-inline">
+                                    <input required class="form-check-input validate" type="radio" name="senior_citizen" id="senior_citizen_yes" value="1">
+                                    <label class="form-check-label" for="senior_citizen_yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline ml-3">
+                                    <input required class="form-check-input validate" type="radio" name="senior_citizen" id="senior_citizen_no" value="0">
+                                    <label class="form-check-label" for="senior_citizen_no">No</label>
+                                </div>
+                                <div class="invalid-feedback">
+                                    Please choose senior citizen!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row float-right mt-5">
+                    <input id="btn-reset" class="btn btn-dark pl-5 pr-5" name="reset" value="Reset" type="reset"/>
+                    <input class="btn btn-primary btn-lg ml-2" name="submit" id="btn-add-person" value="Submit" type="submit"/>
+                    <input class="btn btn-primary btn-lg ml-2 d-none" name="submit" id="btn-update-person" value="Update" type="submit"/>
+                </div>
+            </form>
+        </section>
+
+        <section class="clearfix">
+            <h2 class="mt-5 mb-5 font-weight-light">List Person</h2>
+            <table id="tbl-list-person" class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Social Security</th>
+                    <th scope="col">Citizen ID</th>
+                    <th scope="col">State</th>
+                    <th scope="col">Senior</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container-fluid">
+        <span class="text-muted float-left">Chi Cuong - 611111 ::: CS472-WAP</span>
+        <span class="text-muted float-right">© May 2020</span>
+    </div>
+</footer>
+</body>
+</html>
