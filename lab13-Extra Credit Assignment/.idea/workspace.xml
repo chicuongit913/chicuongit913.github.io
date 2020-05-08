@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lab11" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="73aad806-5bee-4182-aba6-97ec856d27f6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="jsf" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1bY4GDUieEfZDZT5HEDsMKltDAZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/cs472/mvc/controller" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/tags" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/cs472/mvc/controller" />
+      <recent name="$PROJECT_DIR$/src/cs472/mvc" />
+      <recent name="$PROJECT_DIR$/web/views" />
+      <recent name="$PROJECT_DIR$/web" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.Docker Image">
+    <configuration name="GlassFish 5.0.1" type="GlassfishConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="GlassFish 5.0.1" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/lab11_war_exploded" />
+      <deployment>
+        <artifact name="lab11:war exploded">
+          <settings />
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="DOMAIN" value="domain1" />
+        <option name="PRESERVE" value="false" />
+        <option name="COMPATIBILITY" value="false" />
+        <option name="VIRTUAL_SERVER" />
+        <option name="USERNAME" value="admin" />
+        <option name="CREDENTIAL_ALIAS" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="GlassFish" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="9009" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lab11:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration name="Docker Image" type="docker-deploy" factoryName="docker-image" temporary="true" server-name="Docker">
+      <deployment type="docker-image">
+        <settings>
+          <option name="imageTag" value="tomcat:latest" />
+          <option name="command" value="" />
+          <option name="containerName" value="lab11" />
+          <option name="entrypoint" value="" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="8080" />
+                <option name="hostIp" value="127.0.0.1" />
+                <option name="hostPort" value="8080" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
+          <option name="commandLineOptions" value="" />
+          <option name="volumeBindings">
+            <list>
+              <DockerVolumeBindingImpl>
+                <option name="containerPath" value="/usr/local/tomcat/webapps" />
+                <option name="hostPath" value="$PROJECT_DIR$/out/artifacts/lab11/" />
+              </DockerVolumeBindingImpl>
+            </list>
+          </option>
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Docker Image" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73aad806-5bee-4182-aba6-97ec856d27f6" name="Default Changelist" comment="" />
+      <created>1588795594162</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588795594162</updated>
+      <workItem from="1588795597410" duration="15578000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="657" y="252" key="#Docker_Image" timestamp="1588821337292">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="657" y="252" key="#Docker_Image/0.23.1920.1177@0.23.1920.1177" timestamp="1588821337292" />
+    <state x="773" y="334" key="#com.intellij.ide.util.MemberChooser" timestamp="1588832019611">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="773" y="334" key="#com.intellij.ide.util.MemberChooser/0.23.1920.1177@0.23.1920.1177" timestamp="1588832019611" />
+    <state x="798" y="302" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1588820187918">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="798" y="302" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.23.1920.1177@0.23.1920.1177" timestamp="1588820187918" />
+    <state x="448" y="193" key="SettingsEditor" timestamp="1588822005283">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="448" y="193" key="SettingsEditor/0.23.1920.1177@0.23.1920.1177" timestamp="1588822005283" />
+    <state x="866" y="502" width="839" height="187" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize" timestamp="1588821296499">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="866" y="502" width="839" height="187" key="com.intellij.docker.deployment.ui.DockerPortBindingsField.v173.dialogSize/0.23.1920.1177@0.23.1920.1177" timestamp="1588821296499" />
+    <state x="866" y="502" width="996" height="341" key="com.intellij.docker.deployment.ui.DockerVolumeBindingsField.v173.dialogSize" timestamp="1588821327433">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="866" y="502" width="996" height="341" key="com.intellij.docker.deployment.ui.DockerVolumeBindingsField.v173.dialogSize/0.23.1920.1177@0.23.1920.1177" timestamp="1588821327433" />
+    <state x="672" y="511" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1588820185764">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="672" y="511" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1177@0.23.1920.1177" timestamp="1588820185764" />
+    <state x="661" y="366" width="598" height="490" key="find.popup" timestamp="1588822251202">
+      <screen x="0" y="23" width="1920" height="1177" />
+    </state>
+    <state x="661" y="366" width="598" height="490" key="find.popup/0.23.1920.1177@0.23.1920.1177" timestamp="1588822251202" />
+  </component>
+</project>
