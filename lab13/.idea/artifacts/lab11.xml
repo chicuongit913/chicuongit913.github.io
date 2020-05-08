@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="lab11">
+    <output-path>$PROJECT_DIR$/out/artifacts/lab11</output-path>
+    <root id="archive" name="lab11.war">
+      <element id="artifact" artifact-name="lab11:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
