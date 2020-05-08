@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm - Cuong Nguyen - 611111</title>
+
+    <link rel="icon" href="./assets/images/favicon-cc.png" type="image/x-icon" />
+
+    <link href="./assets/libs/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="./assets/css/midterm.css" type="text/css" rel="stylesheet" />
+
+    <script src="./assets/libs/jquery/jquery-3.4.1.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/libs/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+    <script src="./assets/js/midterm.js" type="text/javascript"></script>
+    <script src="assets/libs/notify/notify.min.js"></script>
+</head>
+<body class="pb-5">
+<header>
+    <nav id="nav-menu" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">HolyCross Medical Center</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto ml-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="homepage.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="patients.html">Patients</a>
+                </li>
+            </ul>
+            <div class="login text-white">
+                <span>Welcome, Guest</span>
+            </div>
+        </div>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <section>
+            <h2 class="mt-5 mb-5 font-weight-light border-bottom pb-3">Patients Registration</h2>
+            <form method="get" id="add-patient-form" action="patients.html">
+                <div class="form-row">
+                    <div class="col-12">
+                        <div class="form-group">
+                            <label>*Patient ID No:</label>
+                            <input id="patient_id" placeholder="EP-XXX-XXXXXX" required pattern="E?P-\d{3}-\d{6}" name="patient_id" class="form-control validate">
+                            <small class="text-muted">Enter The Patient ID number, in the specified format</small>
+                            <div class="invalid-feedback">
+                                Please provide the Patient ID number!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label>*First Name:</label>
+                            <input id="first_name" required name="first_name" placeholder="Enter First Name" class="form-control validate">
+                            <small class="text-muted">Enter Patient's First Name</small>
+                            <div class="invalid-feedback">
+                                Please provide Patient's First Name!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label>Middle Initial(s):</label>
+                            <input id="middle_name" name="middle_name" placeholder="Enter Middle Initial(s)" class="form-control validate">
+                            <div class="invalid-feedback">
+                                Please provide Patient's Middle Initial(s)!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label>*Last Name:</label>
+                            <input id="last_name" required name="last_name" placeholder="Enter Last Name" class="form-control validate">
+                            <small class="text-muted">Enter Patient's Last Name</small>
+                            <div class="invalid-feedback">
+                                Please provide Patient's Last Name!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label for="inputDoB">*Date of birth:</label>
+                            <input type="date" class="form-control validate" id="inputDoB" placeholder="mm/dd/yyyy" required>
+                            <small class="form-text text-muted ">Enter the Patient's Date of birth.</small>
+                            <div class="invalid-feedback">
+                                Please provide Patient's Date of Birth!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label for="department">*Department:</label>
+                            <select required class="form-control validate" id="department" name="department">
+                                <option value="">Select...</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Ear, Nose and Throat">Ear, Nose and Throat</option>
+                                <option value="Primary Care">Primary Care</option>
+                                <option value="[Unassigned]">[Unassigned]</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select Department!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-12">
+                        <div class="form-group">
+                            <label>*Is this an Out-patient?</label><br/>
+                            <div class="d-block">
+                                <div class="form-check form-check-inline">
+                                    <input required class="form-check-input validate" type="radio" name="out_patient" id="input_out_patient_yes" value="1">
+                                    <label class="form-check-label" for="input_out_patient_yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline ml-3">
+                                    <input required class="form-check-input validate" type="radio" name="out_patient" id="input_out_patient_no" value="0">
+                                    <label class="form-check-label" for="input_out_patient_no">No</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row float-right mt-5">
+                    <input class="btn btn-light pl-5 pr-5" name="reset" id="btn-reset" value="Reset" type="reset"/>
+                    <input class="btn btn-custom btn-lg ml-2" name="submit" id="btn-add" value="Register Patient" type="submit"/>
+                    <input class="btn btn-custom btn-lg ml-2 d-none" name="submit" id="btn-update" value="Update Patient" type="submit"/>
+                </div>
+            </form>
+        </section>
+
+        <div class="row clearfix">
+            <div class="form-check ml-3">
+                <input type="checkbox" class="form-check-input" id="elderly">
+                <label class="form-check-label" for="elderly">Show Elderly Patients only</label>
+            </div>
+            <div class="form-check ml-5">
+                <input type="checkbox" class="form-check-input" id="outPatient">
+                <label class="form-check-label" for="outPatient">Show Out-Patients only</label>
+            </div>
+        </div>
+
+        <section class="clearfix">
+            <table id="tbl-list-paitent" class="table mt-5">
+                <thead>
+                <tr>
+                    <th scope="col">Patient ID No</th>
+                    <th scope="col">First Name</th>
+                    <th scope="col">Middle Initial(s)</th>
+                    <th scope="col">Last Name</th>
+                    <th scope="col">Date of birth</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Out-patient?</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </section>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container-fluid">
+        <span class="text-muted float-left">Chi Cuong - 611111 ::: CS472-WAP</span>
+        <span class="text-muted float-right">© May 2020</span>
+    </div>
+</footer>
+</body>
+</html>

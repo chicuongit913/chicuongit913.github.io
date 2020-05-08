@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <style type="text/css" >
+        table {
+            border-collapse: collapse;
+        }
+
+        table, td, th {
+            border: 1px solid black;
+        }
+        td{
+            height: 30px;
+        }
+
+        th,td {
+            padding: 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table id="calendar-table">
+            <thead>
+            <tr>
+                <th scope="col">Week</th>
+                <th scope="col">Session</th>
+            </tr>
+            </thead>
+            <tbody>
+            <!-- Week 1-->
+            <tr>
+                <td rowspan="4">Week1</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a.m.</td>
+            </tr>
+            <tr>
+                <td>p.m.</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+            </tr>
+
+            <!-- Week 2 -->
+            <tr>
+                <td rowspan="4">Week2</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>a.m.</td>
+            </tr>
+            <tr>
+                <td>p.m.</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+            </tr>
+
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
