@@ -1,69 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Cuong Nguyen - 611111</title>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="assets/css/main.css">
-		<link rel="stylesheet" type="text/css" href="assets/css/until.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Kacana – Taking a Break</title>
+    <meta name="description" content="Kacana is currently paused for updates. We'll be back soon with an even better experience!">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
 
-		<script src="assets/js/test.js"></script>
-	</head>
-	<body>
-		<header>
-			<div id="top-image" class="container"></div>
-			<div id="profile-info">
-				<img alt="profile-picture" id="profile-picture" src="assets/images/profile_picture.JPG">
-				<span id="profile-name">Cuong Nguyen<br/><small>611111 - Feb 2020</small></span>
-			</div>
-		</header>
+        :root {
+            --bg: #ffffff;
+            --text: #2d3436;
+            --accent: #ff6b6b;
+            --light: #f8f9fa;
+            --gradient: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
 
-		<main>
-			<div class="container" >
-					<ul id="labs-list">
-						<li>
-							Lab2 - W1D2 - <a href="lab1/aboutme.html">About me</a> | <a href="lab1/pie.html">Recipe</a>
-						</li>
-						<li>
-							Lab3 - W1D3 - <a href="lab2/tmnt.html">Movie Review</a>
-						</li>
-						<li>
-							Lab4 - W1D4 - <a href="lab3/webform1.html">Login Form</a> |
-							<a href="lab3/webform2.html">Add New Product</a>
-						</li>
-						<li>
-							Lab5 - W1D5 - <a href="lab4/time.html">Time</a> | <a href="lab4/execute.html">Execute JS</a>
-						</li>
-						<li>
-							Lab6 - W1D6 - <a href="lab5/decoratemytext.html">Decorate My Text</a>
-						</li>
-						<li>
-							Lab7 - W2D1 - <a target="_blank" href="docs/Lab%207-611111.pdf">Lab 7 - solution</a>
-						</li>
-						<li>
-							Lab8 - W2D2 - <a target="_blank" href="assets/js/lab8.js">JS for Lab 8</a>
-						</li>
-						<li>
-							Lab9 - W2D3 - <a target="_blank" href="assets/js/lab9-pro1.2.3.js">JS for Lab 9</a> |
-							<a target="_blank" href="lab9/webform1.html">Login Form</a> |
-							<a target="_blank" href="lab9/webform2.html">New Product Form</a>
-						</li>
-					</ul>
-			</div>
-		</main>
+        * { margin:0; padding:0; box-sizing:border-box; }
 
-		<footer>
-			<div id="copy-right" >
-				<p>&copy; Chi Cuong Nguyen - 611111</p>
-				<p>Maharishi internation university</p>
-				<p>Address: 100 N 4th street - 52557</p>
-			</div>
-			<div id="validator">
-				<a href="http://validator.w3.org/check?uri=https://chicuongit913.github.io/">
-					<img src="assets/images/w3c-html.png" alt="html validator"/>
-				</a>
-				<a href="http://jigsaw.w3.org/css-validator/validator?uri=https://chicuongit913.github.io/"><img src="assets/images/w3c-css.png" alt="css validator"></a>
-			</div>
-		</footer>
-	</body>
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+            background: var(--gradient);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(12px);
+            border-radius: 24px;
+            padding: 70px 40px;
+            max-width: 680px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .logo {
+            font-size: 4.8rem;
+            font-weight: 700;
+            letter-spacing: -2px;
+            color: var(--accent);
+            margin-bottom: 30px;
+        }
+
+        .illustration {
+            width: 220px;
+            height: auto;
+            margin: 30px auto 40px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--text);
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: #636e72;
+            margin-bottom: 40px;
+        }
+
+        .footer {
+            font-size: 1.1rem;
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            from { opacity:0; transform:translateY(30px); }
+            to   { opacity:1; transform:translateY(0); }
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 50px 25px; }
+            .logo { font-size: 3.8rem; }
+            .illustration { width: 180px; }
+            h1 { font-size: 2.3rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">KACANA</div>
+
+        <!-- The illustration (plug almost connecting) -->
+        <svg class="illustration" viewBox="0 0 240 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M80 100 L60 120 L80 140" stroke="#ff6b6b" stroke-width="16" stroke-linecap="round"/>
+            <path d="M160 100 L180 120 L160 140" stroke="#ff6b6b" stroke-width="16" stroke-linecap="round"/>
+            <circle cx="60" cy="120" r="14" fill="#ff6b6b"/>
+            <circle cx="180" cy="120" r="14" fill="#ff6b6b"/>
+            <rect x="52" y="110" width="16" height="20" rx="8" fill="#ff6b6b"/>
+            <rect x="172" y="110" width="16" height="20" rx="8" fill="#ff6b6b"/>
+            <path d="M120 40 L100 80 L140 80 Z" fill="#74c0fc"/>
+            <path d="M120 40 L90 100 L150 100 Z" fill="#4a90e2"/>
+            <text x="120" y="135" text-anchor="middle" font-size="28" font-weight="bold" fill="#74c0fc">K</text>
+        </svg>
+
+        <h1>We're Taking a Break</h1>
+
+        <p>
+            Kacana is currently not operating.<br>
+            We’re pausing services for maintenance and updates.<br>
+            We’ll be back soon—better than ever!
+        </p>
+
+        <div class="footer">Thank you for your support.</div>
+    </div>
+
+</body>
 </html>
